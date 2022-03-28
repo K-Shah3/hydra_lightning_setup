@@ -1,0 +1,16 @@
+load_from_checkpoint: null
+epochs: 10
+batch_size: 1
+learning_rate: 0.003
+loss: dummy
+eval_metrics: wohoo
+checkpoint_freq: 1
+save_top_k: 2
+val_interval: 1.0
+log_steps: 1
+parallel_engine: ddp
+cuda: false
+gpus: 0
+num_workers: 1
+seed: 5721
+run_name: test

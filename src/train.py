@@ -47,7 +47,7 @@ def train_model(cfg):
     ckpt = ModelCheckpoint(
         dirpath=ckpt_dir,
         filename="{epoch}",
-        period=cfg.checkpoint_freq,
+        every_n_epochs=cfg.checkpoint_freq,
         monitor=f"Validation: {cfg.eval_metrics}",
         save_top_k=cfg.save_top_k,
         mode="min",
@@ -61,7 +61,7 @@ def train_model(cfg):
         benchmark=True,
         deterministic=True,
         checkpoint_callback=ckpt,
-        prepare_data_per_node=False,
+        prepare_data_per_node=True,
         max_epochs=cfg.epochs,
         logger=wandb_logger,
         log_every_n_steps=cfg.log_steps,

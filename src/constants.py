@@ -6,6 +6,7 @@ from pathlib import Path
 constants_path = Path(__file__)
 SRC_PATH = constants_path.parent
 PROJECT_PATH = SRC_PATH.parent
+IO_PATH = SRC_PATH
 
 # Data path
 #  set your data paths ehre
