@@ -1,0 +1,16 @@
+preprocessing:
+    - protein
+    - identity
+    - ligand
+    - identity
+representation:
+    - protein
+    - masif
+    - ligand
+    - mol_graph
+ligand_preprocessing:
+    add_Hs: False
+    kekulize: False
+    out_size: -1
+    max_atoms: 200
+    scaffold: False

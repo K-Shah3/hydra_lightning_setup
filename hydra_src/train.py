@@ -6,10 +6,10 @@ from pytorch_lightning import Trainer, seed_everything
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.loggers import WandbLogger
 
-from src import constants
-from src.configs import config
-from src.models.sample_model import SampleModel  # TODO
-from src.utils.logging import get_logger
+from hydra_src import constants
+from hydra_src.configs import config
+from hydra_src.models.sample_model import SampleModel  # TODO
+from hydra_src.utils.logging import get_logger
 
 logger = get_logger(__name__)
 

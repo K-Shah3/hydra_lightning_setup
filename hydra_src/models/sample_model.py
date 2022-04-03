@@ -6,7 +6,7 @@ import torch
 from omegaconf import DictConfig
 from torch.utils.data import DataLoader, Dataset
 
-from src.utils.logging import get_logger
+from hydra_src.utils.logging import get_logger
 
 logger = get_logger(__file__)
 

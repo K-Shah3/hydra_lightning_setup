@@ -1,14 +1,9 @@
 defaults:
     - dataset: pdb_bind
     - model: masif_gnn_regressor
-    - features: default_features
-    - _self_
-
+    
 params:
-    task:
-        - train
-        - valid
-        - test
+    task: train
     device: cpu
     num_gpus: 2
     precision: mixed 
@@ -25,6 +20,18 @@ dataloader:
     multi_process_count: 0
     multi_process_max_pre_fetch: 2
 
+features:
+    preprocessing:
+        - protein
+        - identity
+        - ligand
+        - identity
+    representation:
+        - protein
+        - masif
+        - ligand
+        - mol_graph
+
 optimiser:
     type: adam
     beta1: 0.9
@@ -33,5 +40,3 @@ optimiser:
     learning_rate: 0.0001
     weight_decay: 0.0
     amsgrad: False
-
-  

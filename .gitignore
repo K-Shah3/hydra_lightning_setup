@@ -92,3 +92,16 @@ io/
 # Other
 .history
 .history/
+
+# datasets 
+src/data/download/pdbbind/
+
+wandb/
+
+src/outputs/
+
+outputs/
+
+src/bin/split_dataset.pkl
+
+sandbox.ipynb

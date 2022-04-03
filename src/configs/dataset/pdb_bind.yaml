@@ -1,0 +1,13 @@
+source: pdbbind
+path: /home/ks877/Project/SSLProteins/src/data/download/pdbbind
+year: 2019
+refined: True
+general: False
+protonated: True
+centered: False
+fraction: 1.0
+split:
+    ratio_train: 0.8
+    ratio_valid: 0.1
+    ratio_test: 0.1
+    shuffle: True
